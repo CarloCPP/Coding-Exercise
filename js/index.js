@@ -36,7 +36,7 @@ const fetchData = async () => {
 
             console.log(json.rates)
             ratesList = json.rates;
-            mutatedRatesList = json.rates;//remove this later
+            // mutatedRatesList = json.rates;//remove this later
             // console.log(typeof (ratesList));
 
             // do validation for empty list
@@ -88,14 +88,22 @@ const fetchData = async () => {
             }
 
 
-            //mutateList
-            Object.keys(ratesList).map(function (key, value) {
-                mutatedRatesList[key] = value + 10.0002;
+            //mutatedRatesList 
+            // +10.0002
+            mutatedRatesList = Object.assign({}, ratesList);
+            const keyList = Object.keys(mutatedRatesList);
+            keyList.map((key) => (mutatedRatesList[key] += 10.0002))
 
-            });
+
+
+
+
+
+
+
             console.log('mutatedRatesList: ', mutatedRatesList);
 
-            for (let [key, value] of Object.entries(ratesList)) {
+            for (let [key, value] of Object.entries(mutatedRatesList)) {
 
 
                 var mutatedTable = document.getElementById("mutatedTable");
@@ -164,17 +172,17 @@ const isRateEven = (rateValue) => {
     }
     //change float to int
     var rateValue = Math.floor(rateValue);
-    console.log(`isRateEven(): ${(rateValue % 2-1)?true:false}`);
-    
-    return (rateValue % 2)-1
+    console.log(`isRateEven(): ${(rateValue % 2 - 1) ? true : false}`);
+
+    return (rateValue % 2) - 1
 
 }
 
 
 // Test case
-isRateEven('4') // true
-isRateEven('3.3') // false
-isRateEven(4) // true
-isRateEven(3.3) // false
+// isRateEven('4') // true
+// isRateEven('3.3') // false
+// isRateEven(4) // true
+// isRateEven(3.3) // false
 
 
