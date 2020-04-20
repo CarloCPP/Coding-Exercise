@@ -66,8 +66,8 @@ const fetchData = async () => {
 
                 if (key == "HKD") {
                     console.log(`key of ${key} and value of ${value} has key with HKD`);
-                    ratesKeyCell.style.border = 'solid'
-                    ratesKeyCell.style.borderColor = 'red'
+                    // ratesKeyCell.style.border = 'solid'
+                    // ratesKeyCell.style.borderColor = 'red'
 
                     ratesValueCell.style.border = 'solid'
                     ratesValueCell.style.borderColor = 'red'
@@ -76,8 +76,8 @@ const fetchData = async () => {
 
                 if (isRateEven(value)) {
                     console.log(`key of ${key} and value of ${value} has value of Even number`);
-                    ratesKeyCell.style.border = 'solid'
-                    ratesKeyCell.style.borderColor = 'red'
+                    // ratesKeyCell.style.border = 'solid'
+                    // ratesKeyCell.style.borderColor = 'red'
                     ratesValueCell.style.border = 'solid'
                     ratesValueCell.style.borderColor = 'red'
 
@@ -115,8 +115,8 @@ const fetchData = async () => {
 
                 if (key == "HKD") {
                     console.log(`key of ${key} and value of ${value} has key with HKD`);
-                    ratesKeyCell.style.border = 'solid'
-                    ratesKeyCell.style.borderColor = 'red'
+                    // ratesKeyCell.style.border = 'solid'
+                    // ratesKeyCell.style.borderColor = 'red'
 
                     ratesValueCell.style.border = 'solid'
                     ratesValueCell.style.borderColor = 'red'
@@ -124,8 +124,8 @@ const fetchData = async () => {
                 }
                 if (isRateEven(value)) {
                     console.log(`key of ${key} and value of ${value} has value of Even number`);
-                    ratesKeyCell.style.border = 'solid'
-                    ratesKeyCell.style.borderColor = 'red'
+                    // ratesKeyCell.style.border = 'solid'
+                    // ratesKeyCell.style.borderColor = 'red'
                     ratesValueCell.style.border = 'solid'
                     ratesValueCell.style.borderColor = 'red'
 
